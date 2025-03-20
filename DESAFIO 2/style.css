@@ -1,0 +1,190 @@
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../Images/Cor.png') no-repeat center center/cover;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.formulario {
+    flex: 1;
+    padding: 30px;
+}
+
+h1, h2 {
+    color: #2135A6;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.trilhas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.trilha-btn {
+    padding: 12px;
+    border: 2px solid #2135A6;
+    border-radius: 5px;
+    background: white;
+    color: #2135A6;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.trilha-btn:hover,
+.trilha-btn.active {
+    background: #2135A6;
+    color: white;
+}
+
+/* Botões */
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Área da Ilustração */
+.ilustracao {
+    flex: 1;
+    background: #2135A6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+}
+
+.capa {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 1100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+
+.trilhas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    gap: 20px; 
+    justify-content: center; /
+}
+
+
+.trilha-btn {
+    width: 100px;
+    height: 120px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start; 
+    background: #f4f4f4; 
+    border-radius: 10px; 
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.trilha-btn:hover {
+    transform: none;
+}
+
+.trilha-nome {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2135A6;
+    margin-bottom: 5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.trilha-imagem {
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.trilha-btn:nth-child(1) .trilha-imagem {
+    background-image: url('images/front.png');
+}
+
+.trilha-btn:nth-child(2) .trilha-imagem {
+    background-image: url('images/back.png');
+}
+
+.trilha-btn:nth-child(3) .trilha-imagem {
+    background-image: url('images/jogos.png');
+}
+
+.trilha-btn:nth-child(4) .trilha-imagem {
+    background-image: url('images/ux.png');
+}
+
+.trilha-btn:nth-child(5) .trilha-imagem {
+    background-image: url('images/dados.png');
+}
+
+
+
+
